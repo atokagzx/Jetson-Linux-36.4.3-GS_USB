@@ -1,1 +1,4 @@
-# Jetson-Linux-36.4.3-GS_USB
+sudo mkdir /lib/modules/5.15.148-tegra/kernel/drivers/net/can/usb/
+cp gs_usb.ko /lib/modules/5.15.148-tegra/kernel/drivers/net/can/usb/
+sudo depmod
+sudo modprobe gs_usb
